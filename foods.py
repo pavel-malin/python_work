@@ -69,5 +69,19 @@ print("\nMy friend's favorite pizzas are:")
 for friend_pizzy in friend_pizzas:
     print(friend_pizzy.title())
 
+# Without for
+my_foods = ['pizzy', 'falafel', 'carrot cake', 'ice']
+friend_foods = my_foods[:]
+print("The items from the middle of the list are:")
+print(my_foods)
+print("\nThe last three items in the list are:")
+print(friend_foods)
 
-
+my_foods = ['pizzy', 'falafel', 'carrot cake', 'ice']
+friend_foods = my_foods[:]
+my_foods.append('capricciosa')
+friend_foods.append('hawaiian')
+print("The items from the middle of the list are:")
+print(my_foods)
+print("\nThe last three items in the list are:")
+print(friend_foods)
