@@ -62,3 +62,103 @@ print(alien_0)
 
 del alien_0['points']
 print(alien_0)
+
+# 
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'yellow', 'points': 10}
+alien_2 = {'color': 'red', 'points': 15}
+aliens = [alien_0, alien_1, alien_2]
+
+for alien in aliens:
+    print(alien)
+
+# Creating an empty list for
+# storing aliens
+aliens = []
+# Create 30 green aliens
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+# Conclusion of the first 5 aliens
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# Displays the number of created alien
+print("Total number of aliens: " + str(len(aliens)))
+
+# Creating an empty list for
+# storing aliens
+aliens = []
+# Create 30 green aliens
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[0:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+# Conclusion of the first 5 aliens
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# 
+# Creating an empty list for
+# storing aliens
+aliens = []
+# Create 30 green aliens
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[0:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+    elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
+
+# Conclusion of the first 5 aliens
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# Simplify code using  dictionary to display information
+aliens = {
+    'alien_0': {
+        'color': 'green',
+        'points': 5,
+        },
+    'alien_1': {
+        'color': 'yellow',
+        'points': 10,
+        },
+    'alien_2': {
+        'color': 'red',
+        'points': 15,
+        },
+    }
+
+for alien, info in aliens.items():
+    print("\nAll info: " + alien)
+    color = info['color']
+    points = info['points']
+    if color == 'green':
+        print("\tColor: " + color.title())
+        print("\tPoints: " + str(points))
+    elif color == 'yellow':
+        print("\tColor: " + color.title())
+        print("\tPoints: " + str(points))
+    elif color == 'red':
+        print("\tColor: " + color.title())
+        print("\tPoints: " + str(points))
+
+
