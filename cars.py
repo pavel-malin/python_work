@@ -21,3 +21,16 @@ print(cars)
 
 cars.reverse()
 print(cars)
+
+
+def make_cars(models, outback, color, **info_cars):
+    '''Information about the car'''
+    car_info = {}
+    car_info['models'] = models
+    car_info['color'] = color
+    for key, value in car_info.items():
+        car_info[key] = value
+    return car_info
+
+info_cars = make_cars('bmw', 'ger', 'red', tow_package=True)
+print(info_cars)

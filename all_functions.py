@@ -1,6 +1,5 @@
 # All functions (upper, lower, title, del, pop, remove, reverse, 
 # sort, sorted, len, \n, \t, add, append, strip, lstrip, rstrip)
-
 # Count list
 list_world = ['USA', 'Russai', 'Belarus', 'Poland', 'Litva', 'Latvia',
             'Americ', 'Ukraina', 'Yaponia', 'China', 'Africa', 'Canada']
@@ -18,6 +17,7 @@ print(list_world)
 list_world.reverse()
 print(list_world)
 
+# Delete is list 
 kirkoi = 'Ukraina'
 list_world.remove(kirkoi)
 print(list_world)

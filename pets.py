@@ -35,3 +35,42 @@ while 'cat' in pets:
     pets.remove('cat')
 
 print(pets)
+
+ 
+def describe_pet(animal_type, pet_name):
+    '''Displays information about the animal'''
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+describe_pet('hamster', 'harry')
+describe_pet('dog', 'willie')
+
+
+def describe_0pet(animal_type, pet_name):
+    '''Displays information about the animal'''
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+describe_0pet(animal_type='hamster', pet_name='harry')
+describe_0pet(animal_type='harry', pet_name='hamster')
+
+def describe_1pet(pet_name, animal_type='dog'):
+    '''Displays information about the animal'''
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+describe_1pet(pet_name='willie')
+describe_1pet(pet_name='harry', animal_type='hamster')
+describe_1pet('willie')
+describe_1pet(pet_name='willie')
+describe_1pet('harry', 'hamster')
+describe_1pet(pet_name='harry', animal_type='hamster')
+describe_1pet(animal_type='hamster', pet_name='harry')
+
+# Error
+def describe_2pet(animal_type, pet_name):
+    '''Displays information about the animal'''
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+# describe_2pet()

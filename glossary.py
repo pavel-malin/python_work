@@ -1,3 +1,16 @@
+from collections import OrderedDict
+
+glossary = OrderedDict()
+glossary['list'] = 'title'
+glossary['tuple'] = 'append'
+glossary['string'] = 'new string'
+glossary['numbers'] = 'str'
+glossary['teams'] = 'if-elif-else'
+
+for key, value in glossary.items():
+    print(key.title() + ': ' + value.title())
+
+"""
 # Conclusion of the whole dictionaly,
 # conclusion of the dictionary design
 glossary = {
@@ -24,3 +37,4 @@ glossary = {
     }
 for name, value in glossary.items():
     print(name.title() + ": " + value)
+"""
